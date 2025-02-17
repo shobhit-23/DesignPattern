@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;SingletonPattern.SimpleSingleton&apos; to &apos;SimpleSingleton2&apos;&#x0A;- Original project: &apos;Singleton&apos;&#x0A;- Original element: &apos;SingletonPattern.SimpleSingleton&apos;&#x0A;- Renamed element: &apos;SingletonPattern.SimpleSingleton2&apos;&#x0A;- Update references to refactored element&#x0A;- Rename similarly named elements&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;SimpleSingleton&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;SingletonPattern{SimpleSingleton.java[SimpleSingleton" matchStrategy="1" name="SimpleSingleton2" qualified="false" references="true" similarDeclarations="true" stamp="1739468350430" textual="false" version="1.0"/>
+</session>

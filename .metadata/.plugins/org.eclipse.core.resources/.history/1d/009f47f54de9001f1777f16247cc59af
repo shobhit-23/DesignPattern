@@ -1,0 +1,43 @@
+package Observable;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.management.Notification;
+
+public class IphoneObservableImpl implements StocksObservable{
+	
+	public List<NotificationAlertObserver> observerList = new ArrayList<>();
+	public int stockCount=0;
+	
+	@Override
+	public void add(NotificationAlertObserver observer) {
+		observerList.add(observer);
+		
+	}
+
+	@Override
+	public void remove(NotificationAlertObserver observer) {
+		
+		
+	}
+
+	@Override
+	public void notifySubscribers() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setStockCount(int newStockAdded) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getStockCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

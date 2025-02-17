@@ -1,0 +1,17 @@
+package abstractFactory;
+
+public class MainClass {
+	public static void main(String args[]) {
+		RectangularShapeFactory rectangularShapeFactory= new RectangularShapeFactory();
+		
+		Shape circleShape= rectangularShapeFactory.getShape("CIRCLE");
+		circleShape.draw();
+		
+		Shape rectangleShape= rectangularShapeFactory.getShape("RECTANGLE");
+		rectangleShape.draw();
+	}
+}
+
+
+// two levels of factory means first one is deciding the type of shape
+// then you will go to the second level which will deal with shape

@@ -1,0 +1,10 @@
+package FactoryPattern;
+
+public class Rectangle implements shape{
+
+	@Override
+	public void draw() {
+		System.out.println("It is a rectangle");	
+	}
+
+}

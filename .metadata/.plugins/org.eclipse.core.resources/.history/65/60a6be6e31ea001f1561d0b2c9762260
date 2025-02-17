@@ -1,0 +1,17 @@
+package SingletonPattern;
+
+public class SimpleSingleton {
+	
+	// Private constructor to prevent instantiation
+	private SimpleSingleton() {}
+	
+	// Static inner class that holds the instance
+	private static class Singletonhelper{
+		private static final SimpleSingleton INSTANCE = new SimpleSingleton();
+	}
+	
+	// Public method to get the instance
+	public static SimpleSingleton getInstance() {
+		return Singletonhelper.INSTANCE;
+	}
+}

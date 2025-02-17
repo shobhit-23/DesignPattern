@@ -1,0 +1,35 @@
+package Observable;
+
+public class IphoneObservableImpl implements StocksObservable{
+
+	@Override
+	public void add(NotificationAlertObserver observer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void remove(NotificationAlertObserver observer) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void notifySubscribers() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void setStockCount(int newStockAdded) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public int getStockCount() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

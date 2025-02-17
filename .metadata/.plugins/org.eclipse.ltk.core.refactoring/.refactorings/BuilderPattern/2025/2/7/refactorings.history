@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;BuilderPattern/src/BuilderPattern/BuildervsDecorator&apos; to &apos;BuilderVsDecorator&apos;" description="Rename resource &apos;BuildervsDecorator&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/BuilderPattern/BuildervsDecorator" name="BuilderVsDecorator" stamp="1739647018455" updateReferences="true"/>
+</session>
