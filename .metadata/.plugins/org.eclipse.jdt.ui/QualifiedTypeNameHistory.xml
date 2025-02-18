@@ -1,12 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="Observable.StocksObservable"/>
-    <fullyQualifiedTypeName name="Observer.EmailAlertObserverImpl"/>
-    <fullyQualifiedTypeName name="Observer.NotificationAlertObserver"/>
-    <fullyQualifiedTypeName name="Observer.MobileAlertObserverImpl"/>
-    <fullyQualifiedTypeName name="Observable.IphoneObservableImpl"/>
-    <fullyQualifiedTypeName name="javax.swing.LayoutFocusTraversalPolicy"/>
-    <fullyQualifiedTypeName name="DecoratorPattern.CoffeeDecorator"/>
     <fullyQualifiedTypeName name="DecoratorPattern.Coffee"/>
     <fullyQualifiedTypeName name="DecoratorPattern.SimpleCoffee"/>
     <fullyQualifiedTypeName name="DecoratorPattern.Milk"/>
@@ -49,10 +42,7 @@
     <fullyQualifiedTypeName name="Adapter.WeightMachineAdapter"/>
     <fullyQualifiedTypeName name="Adapter.WeightMachineAdapterImpl"/>
     <fullyQualifiedTypeName name="Adaptee.WeightMachineForBabies"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="java.lang.IllegalCallerException"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Stack"/>
     <fullyQualifiedTypeName name="CommandPattern.Light"/>
     <fullyQualifiedTypeName name="CommandPattern.LightOnCommand"/>
@@ -60,4 +50,14 @@
     <fullyQualifiedTypeName name="CommandPattern.LightOffCommand"/>
     <fullyQualifiedTypeName name="CommandPattern.RemoteControl"/>
     <fullyQualifiedTypeName name="CommandPattern.RemoteControlWithUndo"/>
+    <fullyQualifiedTypeName name="EmployeeSystem.Designer"/>
+    <fullyQualifiedTypeName name="EmployeeSystem.Employee"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
+    <fullyQualifiedTypeName name="FileSystem.FileSystem"/>
+    <fullyQualifiedTypeName name="FileSystem.Directory"/>
+    <fullyQualifiedTypeName name="FileSystem.File"/>
+    <fullyQualifiedTypeName name="ArithmeticExpressionExample.ArithmeticExpression"/>
+    <fullyQualifiedTypeName name="ArithmeticExpressionExample.Number"/>
 </qualifiedTypeNameHistroy>
