@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="DecoratorPattern.Coffee"/>
-    <fullyQualifiedTypeName name="DecoratorPattern.SimpleCoffee"/>
-    <fullyQualifiedTypeName name="DecoratorPattern.Milk"/>
-    <fullyQualifiedTypeName name="DecoratorPattern.Sugar"/>
-    <fullyQualifiedTypeName name="java.util.DoubleSummaryStatistics"/>
-    <fullyQualifiedTypeName name="SingletonPattern.SimpleSingleton"/>
-    <fullyQualifiedTypeName name="SingletonPattern.SimpleSingleton.Singletonhelper"/>
-    <fullyQualifiedTypeName name="SingletonPattern.LazySingleton"/>
-    <fullyQualifiedTypeName name="SingletonPattern.SImpleSigleton"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
-    <fullyQualifiedTypeName name="javax.management.RuntimeErrorException"/>
-    <fullyQualifiedTypeName name="SingletonPattern.StaticBlockSingleton"/>
     <fullyQualifiedTypeName name="SingletonPattern.ThreadSafeSingleton"/>
     <fullyQualifiedTypeName name="SingletonPattern.DoubleCheckedSingleton"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
@@ -54,10 +42,22 @@
     <fullyQualifiedTypeName name="EmployeeSystem.Employee"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="FileSystem.FileSystem"/>
     <fullyQualifiedTypeName name="FileSystem.Directory"/>
     <fullyQualifiedTypeName name="FileSystem.File"/>
-    <fullyQualifiedTypeName name="ArithmeticExpressionExample.ArithmeticExpression"/>
     <fullyQualifiedTypeName name="ArithmeticExpressionExample.Number"/>
+    <fullyQualifiedTypeName name="ArithmeticExpressionExample.ArithmeticExpression"/>
+    <fullyQualifiedTypeName name="ArithmeticExpressionExample.Expression"/>
+    <fullyQualifiedTypeName name="ArithmeticExpressionExample.Operation"/>
+    <fullyQualifiedTypeName name="FacadePattern.CPU"/>
+    <fullyQualifiedTypeName name="FacadePattern.HardDrive"/>
+    <fullyQualifiedTypeName name="FacadePattern.Memory"/>
+    <fullyQualifiedTypeName name="FacadePattern.ComputerFacade"/>
+    <fullyQualifiedTypeName name="FlyweightPattern.SmallRobot"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="FlyweightPattern.RobotFactory"/>
+    <fullyQualifiedTypeName name="FlyweightPattern.Robot"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
