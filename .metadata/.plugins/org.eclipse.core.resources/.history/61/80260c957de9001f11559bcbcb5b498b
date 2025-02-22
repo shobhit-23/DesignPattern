@@ -1,6 +1,0 @@
-package DecoratorPattern;
-
-public interface Coffee {
-	public double getCost();
-	public double getDescription();
-}
