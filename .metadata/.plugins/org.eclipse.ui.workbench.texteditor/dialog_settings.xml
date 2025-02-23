@@ -6,12 +6,14 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="StudentBuilder"/>
+		<item key="selection" value="width"/>
 		<list key="findhistory">
+			<item value="weight"/>
 			<item value="void"/>
 			<item value="StudentBuilder"/>
 		</list>
 		<list key="replacehistory">
+			<item value="width"/>
 			<item value="StudentBuilder"/>
 		</list>
 	</section>
