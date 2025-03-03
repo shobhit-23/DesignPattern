@@ -1,5 +1,0 @@
-package ArithmeticExpressionExample;
-
-public enum Operation {
-
-}

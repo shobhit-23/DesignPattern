@@ -1,17 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="abstractFactory.GlobalShapeFactory"/>
-    <fullyQualifiedTypeName name="abstractFactory.Shape"/>
-    <fullyQualifiedTypeName name="Adaptee.WeightMachine"/>
-    <fullyQualifiedTypeName name="Adapter.WeightMachineAdapter"/>
-    <fullyQualifiedTypeName name="Adapter.WeightMachineAdapterImpl"/>
-    <fullyQualifiedTypeName name="Adaptee.WeightMachineForBabies"/>
-    <fullyQualifiedTypeName name="java.lang.IllegalCallerException"/>
-    <fullyQualifiedTypeName name="java.util.Stack"/>
-    <fullyQualifiedTypeName name="CommandPattern.Light"/>
-    <fullyQualifiedTypeName name="CommandPattern.LightOnCommand"/>
-    <fullyQualifiedTypeName name="CommandPattern.Command"/>
-    <fullyQualifiedTypeName name="CommandPattern.LightOffCommand"/>
     <fullyQualifiedTypeName name="CommandPattern.RemoteControl"/>
     <fullyQualifiedTypeName name="CommandPattern.RemoteControlWithUndo"/>
     <fullyQualifiedTypeName name="EmployeeSystem.Designer"/>
@@ -28,7 +16,6 @@
     <fullyQualifiedTypeName name="FacadePattern.Memory"/>
     <fullyQualifiedTypeName name="FacadePattern.ComputerFacade"/>
     <fullyQualifiedTypeName name="FlyweightPattern.SmallRobot"/>
-    <fullyQualifiedTypeName name="java.lang.Exception"/>
     <fullyQualifiedTypeName name="FlyweightPattern.RobotFactory"/>
     <fullyQualifiedTypeName name="FlyweightPattern.Robot"/>
     <fullyQualifiedTypeName name="T"/>
@@ -38,7 +25,6 @@
     <fullyQualifiedTypeName name="IteratorPattern.Book"/>
     <fullyQualifiedTypeName name="IteratorPattern.Iterator"/>
     <fullyQualifiedTypeName name="IteratorPattern.BookShelf"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="StatePattern.State"/>
     <fullyQualifiedTypeName name="java.io.CharConversionException"/>
     <fullyQualifiedTypeName name="StatePattern.NoMoneyState"/>
@@ -56,8 +42,22 @@
     <fullyQualifiedTypeName name="java.lang.NullPointerException"/>
     <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="MementoOrSnapShotDesignPattern.CareTaker"/>
     <fullyQualifiedTypeName name="MementoOrSnapShotDesignPattern.Originator"/>
     <fullyQualifiedTypeName name="MementoOrSnapShotDesignPattern.Memento"/>
+    <fullyQualifiedTypeName name="EmployeeDao"/>
+    <fullyQualifiedTypeName name="ProxyPattern.EmployeeDaoImpl"/>
+    <fullyQualifiedTypeName name="java.lang.Exception"/>
+    <fullyQualifiedTypeName name="ProxyPattern.EmployeeDao"/>
+    <fullyQualifiedTypeName name="ProxyPattern.EmployeeDaoProxy"/>
+    <fullyQualifiedTypeName name="ProxyPattern.Employee"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="VisitorDesignPattern.RoomElement"/>
+    <fullyQualifiedTypeName name="VisitorDesignPattern.RoomPricingVisitor"/>
+    <fullyQualifiedTypeName name="VisitorDesignPattern.SingleRoom"/>
+    <fullyQualifiedTypeName name="VisitorDesignPattern.DoubleRoom"/>
+    <fullyQualifiedTypeName name="VisitorDesignPattern.DeluxeRoom"/>
+    <fullyQualifiedTypeName name="VisitorDesignPattern.RoomVisitor"/>
+    <fullyQualifiedTypeName name="VisitorDesignPattern.RoomMaintenanceVisitor"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
