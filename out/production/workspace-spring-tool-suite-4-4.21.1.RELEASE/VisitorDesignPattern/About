@@ -1,0 +1,35 @@
+It allows you to add new operation to existing class without changing its structure.
+means it will help you adding new property to a class which is achieved by separating the 
+operation(algorithm) from the objects on which it operates.
+
+suppose there is a class
+
+class HotelRoom()
+{
+	public void getRoomPrice()
+	{
+		....
+	}
+	
+	public void initiateRoolMaintenance()
+	{
+		....
+	}
+	
+	public void reserveRoom()
+	{
+		....
+	}
+}	
+
+Now if there are 3 types of room i.e. singleRoom,DoubleRoom and Deluxe Room 
+you want to add some additional feature then it will be difficult
+So what we DO here
+
+We create a Visitor and which will handle one operation to execute and Every type of operation will have a class 
+and everyType of Room can execute it.
+
+We will create a RoomElement interface which will have every type of room 
+and then one interface visitor and which will get implemented by every type of Operation class.
+	
+	

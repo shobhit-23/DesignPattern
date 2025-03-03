@@ -1,0 +1,20 @@
+Facade Design pattern is used to make an abstract layer
+which will interact with the system and client need to 
+know about that layer only.
+eg: suppose we need to purchase an order so
+step1: select an item
+step2: make payment
+step3: generate invoice
+step4: push notification
+
+so it is very difficult for the client to have idea about
+each and every function
+so you can create a 
+
+public void placeOrderFacade()
+{
+	select a item();
+	makePayment();
+	generateInvoice();
+	pushNotification();
+}

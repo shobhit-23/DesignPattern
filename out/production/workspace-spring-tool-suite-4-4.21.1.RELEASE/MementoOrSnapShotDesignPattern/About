@@ -1,0 +1,9 @@
+Provides an ability to revert ab object to a previous state i.e. UNDO capability.
+And it does not expose the object internal implementation.
+
+
+It has 3 major component
+1.Originator : Creates and restores mementos.
+2.Memento : Stores the state of the object.(Snap)
+3.Caretaker : Maintains the history of mementos.
+

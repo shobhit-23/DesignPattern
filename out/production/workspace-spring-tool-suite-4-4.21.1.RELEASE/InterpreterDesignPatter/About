@@ -1,0 +1,29 @@
+The Interpreter Pattern is a behavioral design pattern used to define a language and 
+its grammar, and then interpret expressions in that language. It is useful when you 
+need to evaluate sentences in a domain-specific language (DSL), such as mathematical 
+expressions, regular expressions, or even custom scripting languages.
+eg. Red light means stop and green light means go
+
+
+            CompoentsInvolved
+                 /      \
+                /        \ 
+			   /          \         
+           Context    Abstract Expression
+                           /    \
+                          /      \
+						 /        \
+						/          \
+			    	Terminal      Non-Terminal 
+	            	Expression      Expression
+				   	 
+Terminal Expression - Represents individual symbols in the language (like numbers).
+Non-Terminal Expression - Represents complex expressions using terminal expressions (like addition, subtraction).
+Context - Contains information that is used during interpretation.
+
+eg. find the value of (a*b)+c
+And expression will always consist + and * signs
+so (a*b)+(c*d) so write a generic code.	
+
+
+means here you will interpret the value of each and every sign with the help of context.			   	 
