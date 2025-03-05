@@ -13,7 +13,7 @@ public class MainClass {
 }
 
 
-// Suppose if user is giving you input about the shape 
+// Suppose if user is giving you input uml the shape
 // like give me object of circle then you will have to write this code 
 //Shape getShape(String input)
 //{

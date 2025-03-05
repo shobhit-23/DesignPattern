@@ -1,0 +1,47 @@
+Card
+- cardNumber: int
+- pin: int
++ getCardNumber(): Integer
++ getPin(): Integer
+
+Account
+- accountNumber: int
+- balance: double
++ getAccountNumber(): int
++ getBalance(): double
++ credit(amount: double ): void
++ debit(amount: double ): void
+
+<<abstract>> Transaction
+# transactionId: int
+# accountNumber: int
+# amount: double
++ <<abstract>> execute(): void
+
+
+WithDrawalTransaction extends Transaction
++ execute(): void
+
+DepositTransaction extends Transaction
++ execute(): void
+
+CashDispenserService
+- cashAvailable: double
++ dispenseCash(amount: double): void
+
+BankingService
+- accounts: HashMap<int,Account>(accountNumber, Account)
++ createAccount(accountNumber:int , initialBalance: double): void
++ getAccount(accountNumber:int): Account
++ processTransaction(transaction: Transaction): void
+
+ATM
+- bankService: BankService
+- cashDispenserService: CashDispenserService
+- transactionCounter: AtomicLong
++ authenticateUser(card: Card): boolean
++ checkBalance(accountNumber: int): double
++ withdrawalCash(amount: double): void
++ depositCash(amount: double): void
+- generateTransactionId(): int
+

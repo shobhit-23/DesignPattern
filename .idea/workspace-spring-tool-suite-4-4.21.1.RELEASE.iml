@@ -22,6 +22,7 @@
       <sourceFolder url="file://$MODULE_DIR$/abstractFactory/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/adapterPattern/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/threading/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LLD/ATM /src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
