@@ -1,0 +1,99 @@
+product-> id,name,quantity,price
+coin-> value
+note-> value
+Inventory-> products counter map
+VendingMachineStates-> Idle,Ready,DispenseState,ReturnChangeState
+VendingMachine-> Inventory, states , currentState, selectedProduct, totalPayment
+
+----------------------------UML-------------------------
+
+
+<<enumeration>> Coin
+- value: double
++ getValue(): double
+PENNY(0.01)
+NICKEL(0.05)
+DIME(0.1)
+QUARTER(0.25)
+
+<<enumeration>> Note
+- value: int
++ getValue(): int
+ONE(1)
+FIVE(5)
+TEN(10)
+TWENTY(20)
+
+Product
+- name: String
+- price: double
++ getName(): String
++ getPrice(): Double
+
+Inventory
+- products: HashMap<Product,Integer> (product,quantity)
++ addProduct(product: Product, quantity: Integer): void
++ removeProduct(product: Product): void
++ updateQuantity(product: Product, quantity: Integer): void
++ getQuantity(product: Product): Integer
++ isAvailable(product: Product): Boolean
+
+<<interface>> VendingMachineState // State Pattern
++ selectProduct(product: Product) : void
++ insertCoin(coin: Coin): void
++ insertNote(note: Note): void
++ dispenseProduct(): void
++ returnChange(): void
+
+DispenseState implements VendingMachineState
+- vendingMachine: VendingMachine
++ selectProduct(product: Product) : void
++ insertCoin(coin: Coin): void
++ insertNote(note: Note): void
++ dispenseProduct(): void
++ returnChange(): void
+
+IdleState implements VendingMachineState
+- vendingMachine: VendingMachine
++ selectProduct(product: Product) : void
++ insertCoin(coin: Coin): void
++ insertNote(note: Note): void
++ dispenseProduct(): void
++ returnChange(): void
+
+ReadyState implements VendingMachineState
+- vendingMachine: VendingMachine
++ selectProduct(product: Product) : void
++ insertCoin(coin: Coin): void
++ insertNote(note: Note): void
++ dispenseProduct(): void
++ returnChange(): void
+
+ReturnChangeState implements VendingMachineState
+- vendingMachine: VendingMachine
++ selectProduct(product: Product) : void
++ insertCoin(coin: Coin): void
++ insertNote(note: Note): void
++ dispenseProduct(): void
++ returnChange(): void
+
+VendingMachine
+- instance: VendingMachine
+- inventory: Inventory
+- idleState: VendingMachineState
+- readyState: VendingMachineState
+- dispenseState: VendingMachineState
+- returnChangeState: VendingMachineState
+- currentState: VendingMachineState
+- selectedProduct: Product
+- totalPayment: double
++ getInstance(): VendingMachine // Singleton Pattern
++ selectProduct(product: Product): void
++ insertCoin(coin: Coin): void
++ insertNote(note: Note): void
++ dispenseProduct(): void
++ returnChange(): void
++ resetSelectedProduct(): void
++ addCoin(coin: Coin): void
++ addNote(note: Note): void
++ resetPayment(): void
