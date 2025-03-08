@@ -1,0 +1,99 @@
+flight-> id, name, src, destination, date,
+aircraft-> tailNumber,model,totalSeats
+price, arrrivalTime, DepartureaTime, availableSeats
+seat -> seatNumber, type, status
+payment -> id, paymentMode, amount,paymentStatus
+passenger -> id,name,email, hasBaggage
+userType-> passengers, airlineStaff,Administrators
+Booking-> passenger, seat, price, flight, bookingStatus
+BookingManager-> book(),cancel()
+PaymentProcessor-> processPayment()
+
+----------------------------------UML---------------------------
+
+<<enum>>SeatStatus
+AVAILABLE,RESERVED,OCCUPIED
+
+<<enum>> SeatType
+ECONOMY, PREMIUM_ECONOMY, BUSINESS, FIRST_CLASS
+
+Seat
+- seatNumber: int
+- status: SeatStatus
+- type: Type
++ reserve(): void
++ release(): void
+
+flight
+- flightNumber: String
+- source: String
+- destination: String
+- departureTime: LocalDateTime
+- arrivalTime: LocalDateTime
+- availableSeats: List<Seat>
+
+FlightSearch
+- flights: List<flight>
++ searchFlights(source: String, destination: String, data: LocalDate): List<flight>
+
+AirlineManagementSystem.Passenger
+- id: String
+- name: String
+- email: String
+- phone: String
+
+<<enum>> BookingStatus
+  CONFIRMED,CANCELLED,PENDING,EXPIRED
+
+Booking
+- bookingNumber: String
+- flight: flight
+- passenger: AirlineManagementSystem.Passenger
+- seat: Seat
+- price: double
+- status: BookingStatus
++ getBookingNumber(): String
++ cancel(): void
+
+BookingManager //Singleton
+- instance: BookingManager
+- bookings: Map<String,Booking>
+- lock: Object
+- bookingCounter: AtomicInteger
++ getInstance(): BookingManager
++ createBooking(flight: flight, passenger: Passenger,seat: Seat, price: double): Booking
++ cancelBooking(bookingNumber: String): void
+- generateBookingNumber(): String
+
+<<enum>> PaymentStatus
+  PENDING, COMPLETED, FAILED, REFUNDED
+
+Payment
+- paymentId: String
+- paymentMethod: String
+- amount: double
+- status: PaymentStatus
++ processPayment(): void
+
+PaymentProcessor // Singleton
+- instance: PaymentProcessor
++ getInstance(): PaymentProcessor
++ processPayment(payment:Payment): void
+
+Aircraft
+- tailNumber: String
+- model: String
+- totalSeats: int
+
+AirlineManagementSystem
+- flight: List<flight>
+- aircrafts: List<Aircraft>
+- flightSearch: FlightSearch
+- bookingManager: BookingManager
+- paymentProcessor: PaymentProcessor
++ addFlight(flight: flight): void
++ addAircraft(aircraft: Aircraft): void
++ searchFlights(source: String, destination: String, date: LocalDate): List<flight>
++ bookFlight(flight: flight, passenger: AirlineManagementSystem.Passenger, seat: Seat, price: double): Booking
++ cancelFlight(bookingNumber: String): void
++ processPayment(payment: Payment)

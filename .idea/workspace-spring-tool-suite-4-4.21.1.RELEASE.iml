@@ -24,6 +24,7 @@
       <sourceFolder url="file://$MODULE_DIR$/threading/src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LLD/ATM /src" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/LLD/VendingMachine/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/LLD/AirlineManagementSystem/src" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
