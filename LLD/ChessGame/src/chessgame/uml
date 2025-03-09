@@ -1,0 +1,55 @@
+Pieces -> positionX, positionY, canMove(x,y) {Bishop,King,Knight,Pawn,Queen,Rook}
+Player->  color, makeMove()
+Move-> x,y, piece
+Board-> initializeBoard(), isValidMove(), isCheckmate(), isStalemate()
+ChessGame-> board,Players, currentPlayer, statt(), isGameOver(), getPlayerMove(), disployResult()
+
+---------------------------UML-----------------------
+
+<<enum> Color
+WHITE,BLACK
+
+<<abstract>> Piece
+# color:Color
+# row: int
+# col: int
++ abstract canMove(): boolean
++ getter()
+
+Bishop,King,Queen,Pawn,Knight,Rook extends Piece
++ canMove(): boolean
+
+Player
+- color: Color
++ makeMove(board: Board, move:Move): void
+
+Move
+- piece: Piece
+- destRow: int
+- destCol: int
++ getter()
+
+Board
+- board: Piece[][]
+- intializeBoard(): void
++ getPiece(): Piece
++ setPiece(): Piece
++ isValidMove(piece: Piece,destRow: int,destCol: int): boolean
++ isCheckMate(color: Color): boolean
++ isStaleMate(color: Color): boolean
+
+InvalidMoveException extends RuntimeException
++ InvalidMoveException(message: String)
+
+
+ChessGame
+- board: Board
+- players: Player[]
+- currentPlayer: int
++ start(): void
+- isGameOver(): boolean
+- getPlayerMove(player: Player): Move
+- displayResult(): void
+
+
+

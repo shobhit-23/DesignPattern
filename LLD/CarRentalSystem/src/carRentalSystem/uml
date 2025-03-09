@@ -1,0 +1,62 @@
+car-> id, make, model, year, licensePlateNumber, rental price, carStatus
+carSearch-> on basis of carType, priceRange and availability
+customer-> id, name, contact, drivingLicenseNumber
+Reservation-> id,car,customer,bookingDate,Book(), Modify(),Cancel()
+Payment-> processPayment()
+CarRental-> Book(), Modify(),Cancel()
+
+
+---------------------------------UML-------------------------
+
+Car
+- make: String
+- model: String
+- year: int
+- licensePlate: String
+- rentalPricePerDay: double
+- available: boolean
++ getter() and Setter()
+
+CarSearch
++ searchCars(make: String,model: String,startDate: LocalDate, endDate: LocalDate): List<Car>
+
+Customer
+- name: String
+- contactInfo: String
+- driversLicenseNumber: String
++ getter() and Setter()
+
+Reservation
+- reservationId: String
+- customer: Customer
+- car: Car
+- startDate: LocalDate
+- endDate: LoaclDate
+- totalPrice: double
++ Getter()
++ calculateTotalPrice(): double
+
+<<interface>> PaymentProcessor
++ processPayment(amount: double): boolean
+
+CreditCardPaymentProcessor implements PaymentProcessor
++ processPayment(amount: double): boolean
+
+PaypalPaymentProcessor implements PaymentProcessor
++ processPayment(amount: double): boolean
+
+RentalSystem  //Singleton Pattern
+- instance: RentalSystem
+- cars: Map<String, Car>
+- reservations: Map<String, Reservation>
+- paymentProcessor: PaymentProcessor
+- carSearch: CarSearch
++ getInstance(): RentalSystem
++ addCar(car: Car): void
++ removeCar(car: Car): void
++ searchCars(make: String,model: String,startDate: LocalDate, endDate: LocalDate): List<Car>
++ isCarAvailable(car: Car, startDate: LocalDate, endDate: LocalDate): boolean
++ makeReservation(customer: Customer, car: Car, startDate: LocalDate, endDate: LocalDate): Reservation
++ cancelReservation(reservationID: String): void
++ processPayment(reservation: Reservation): boolean
++ generateReservationId(): String
