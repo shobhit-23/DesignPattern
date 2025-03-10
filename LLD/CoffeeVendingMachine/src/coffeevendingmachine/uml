@@ -1,0 +1,36 @@
+ingredient-> name , quantity
+coffee-> name, price, List<ingredient>
+payment-> amount
+CoffeeMachine-> instance, coffeeMenu, Ingredients, initializeCoffeeMenu(), initializeIngredients(), displayMenu(), selectCoffee(),dispenseCoffee(),hasEnoughIngredients(),updateIngredients()
+
+-------------------------UML--------------------------
+
+Ingredient
+- name: String
+- quantity: int
++ getter()
++ updateQuantity(): void
+
+Coffee
+- name: String
+- price: double
+- recipe: Map<Ingredient,int>
+
+Payment
+- amount: double
++ getAmount(): double
+
+CoffeeMachine  //Singleton
+- instance: CoffeeMachine
+- coffeeMenu: List<Coffee>
+- ingredients: Map<String,Ingredient>
++ getInstance(): CoffeeMachine
+- initializeCoffeeMenu(): void
+- initializeIngredients(): void
++ displayMenu(): void
++ selectCoffee(coffeeName: String): Coffee
++ dispenseCoffee(coffee: Coffee, payment: Payment): void
+- hasEnoughIngredients(coffee: Coffee): boolean
+- updateIngredients(coffee: Coffee): void
+
+
